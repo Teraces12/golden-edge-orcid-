@@ -265,8 +265,11 @@
 
         .bio-code {
             font-family: 'Courier New', monospace;
-            color: #ffd700;
-            line-height: 1.8;
+            color: #e0e0e0;
+            line-height: 2;
+            font-size: 0.95em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
         .bio-string {
@@ -276,6 +279,22 @@
         .bio-comment {
             color: #888;
             font-style: italic;
+        }
+        
+        .bio-code strong {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .bio-code .gold-text {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        
+        .bio-code .gold-glow {
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            font-weight: bold;
         }
 
         .footer {
@@ -383,83 +402,81 @@
         <div class="bio-section">
             <h2 class="section-title">👨‍🔬 Research Profile</h2>
             <div class="bio-content">
-                <div class="bio-code">
-                    <span class="bio-comment"># ═══════════════════════════════════════════════════════════════</span><br>
-                    <span class="bio-comment"># 🏆 GOLDEN AGE AI RESEARCH SCIENTIST & ACADEMIC PROFESSIONAL 🏆</span><br>
-                    <span class="bio-comment"># ═══════════════════════════════════════════════════════════════</span><br>
-                    <span class="bio-comment"># ORCID: 0000-0003-0561-1305 | Ph.D. Applied Mathematics</span><br>
-                    <span class="bio-comment"># "Transforming Mathematical Theory into Intelligent Solutions"</span><br>
-                    <br>
-                    <strong>class</strong> <span style="color: #ffd700; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);">GoldenAge_AI_Scientist</span>:<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment">"""🌟 Elite AI Researcher | Mathematical Pioneer | Innovation Architect"""</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>def</strong> <span style="color: #ffd700;">__init__</span>(<strong>self</strong>):<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># ─────── Core Identity ───────</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.name = <span class="bio-string">"Dr. Lebede Ngartera"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.credentials = <span class="bio-string">"Ph.D. Applied Mathematics | ORCID Verified Scholar"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.title = <span style="color: #ffd700; font-weight: bold;">"AI Strategist | Research Scientist | ML Innovation Leader"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.orcid = <span style="color: #ffd700;">"🔗 0000-0003-0561-1305"</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># ─────── Research Excellence Metrics ───────</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.career_span = <span style="color: #ffd700; font-weight: bold;">5</span> <span class="bio-comment"># years of groundbreaking research</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.publications = <span style="color: #ffd700; font-weight: bold;">9</span> <span class="bio-comment"># peer-reviewed contributions</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.citations = <span style="color: #ffd700; font-weight: bold;">127</span> <span class="bio-comment"># academic impact citations</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.h_index = <span style="color: #ffd700; font-weight: bold;">5</span> <span class="bio-comment"># scholarly influence index</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.collaboration_network = <span style="color: #ffd700; font-weight: bold;">7</span> <span class="bio-comment"># international research partners</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># ─────── Research Specializations ───────</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.core_expertise = [<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"🧠 Bayesian Neural Networks"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"🔍 Retrieval-Augmented Generation (RAG)"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"💬 Natural Language Processing"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"⚙️ Machine Learning Engineering"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"🏥 Healthcare AI Applications"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"📊 Advanced Data Science & Analytics"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]<br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># ─────── Technical Arsenal ───────</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.tech_stack = {<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-string">"languages"</span>: <span class="bio-string">"Python | R | SQL | Julia"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-string">"ml_frameworks"</span>: <span class="bio-string">"TensorFlow | PyTorch | Scikit-learn | XGBoost"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-string">"cloud_platforms"</span>: <span class="bio-string">"AWS | Azure | GCP"</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-string">"specializations"</span>: <span class="bio-string">"MLOps | Big Data | Distributed Computing"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># ─────── Professional Mission ───────</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.mission = <span style="color: #ffd700; font-style: italic;">"Bridging mathematical elegance with AI innovation to create transformative real-world solutions"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.vision = <span style="color: #ffd700; font-style: italic;">"Leading the Golden Age of AI through rigorous research and ethical implementation"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>self</strong>.impact_areas = <span class="bio-string">"Healthcare Revolution | Financial Intelligence | Enterprise Automation"</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># ═══════════════════════════════════════════════════════════════</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># 🎯 RESEARCH & INNOVATION METHODOLOGIES</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment"># ═══════════════════════════════════════════════════════════════</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>def</strong> <span style="color: #ffd700;">publish_groundbreaking_research</span>(<strong>self</strong>, domain, methodology):<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment">"""🏆 Conduct and publish cutting-edge peer-reviewed research"""</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>return</strong> <span style="color: #a6ce39;">f"✨ Published pioneering research in {domain} using {methodology} | Peer-reviewed & Citations: +{self.citations}"</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>def</strong> <span style="color: #ffd700;">architect_ai_solutions</span>(<strong>self</strong>, problem_domain, scale):<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment">"""🚀 Design & deploy production-grade AI systems"""</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>return</strong> <span style="color: #a6ce39;">f"⚡ Engineered scalable {scale} {problem_domain} solution | Production-ready ML architecture"</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>def</strong> <span style="color: #ffd700;">lead_research_collaborations</span>(<strong>self</strong>, institutions, researchers):<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment">"""🤝 Foster interdisciplinary research partnerships"""</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>return</strong> <span style="color: #a6ce39;">f"🌍 Established {len(researchers)} international collaborations across {len(institutions)} institutions"</span><br>
-                    <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>def</strong> <span style="color: #ffd700;">measure_research_impact</span>(<strong>self</strong>):<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="bio-comment">"""📈 Comprehensive academic impact assessment"""</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>return</strong> {<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"📚 publications"</span>: <span style="color: #ffd700; font-weight: bold;">self.publications</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"📊 citations"</span>: <span style="color: #ffd700; font-weight: bold;">self.citations</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"🎯 h_index"</span>: <span style="color: #ffd700; font-weight: bold;">self.h_index</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"🌐 network"</span>: <span style="color: #ffd700; font-weight: bold;">self.collaboration_network</span>,<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">"⭐ status"</span>: <span style="color: #ffd700; font-weight: bold;">"Golden Age Scholar"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                    <br>
-                    <span class="bio-comment"># ═══════════════════════════════════════════════════════════════</span><br>
-                    <span class="bio-comment"># 💎 "Excellence in Research, Impact in Practice" - Golden Age AI</span><br>
-                    <span class="bio-comment"># ═══════════════════════════════════════════════════════════════</span>
-                </div>
+                <div class="bio-code"><span class="bio-comment"># ═══════════════════════════════════════════════════════════════
+# 🏆 GOLDEN AGE AI RESEARCH SCIENTIST & ACADEMIC PROFESSIONAL 🏆
+# ═══════════════════════════════════════════════════════════════
+# ORCID: 0000-0003-0561-1305 | Ph.D. Applied Mathematics
+# "Transforming Mathematical Theory into Intelligent Solutions"
+</span>
+<strong>class</strong> <span class="gold-glow">GoldenAge_AI_Scientist</span>:
+    <span class="bio-comment">"""🌟 Elite AI Researcher | Mathematical Pioneer | Innovation Architect"""</span>
+    
+    <strong>def</strong> <span class="gold-text">__init__</span>(<strong>self</strong>):
+        <span class="bio-comment"># ─────── Core Identity ───────</span>
+        <strong>self</strong>.name = <span class="bio-string">"Dr. Lebede Ngartera"</span>
+        <strong>self</strong>.credentials = <span class="bio-string">"Ph.D. Applied Mathematics | ORCID Verified Scholar"</span>
+        <strong>self</strong>.title = <span class="gold-text">"AI Strategist | Research Scientist | ML Innovation Leader"</span>
+        <strong>self</strong>.orcid = <span class="gold-text">"🔗 0000-0003-0561-1305"</span>
+        
+        <span class="bio-comment"># ─────── Research Excellence Metrics ───────</span>
+        <strong>self</strong>.career_span = <span class="gold-text">5</span>          <span class="bio-comment"># years of groundbreaking research</span>
+        <strong>self</strong>.publications = <span class="gold-text">9</span>         <span class="bio-comment"># peer-reviewed contributions</span>
+        <strong>self</strong>.citations = <span class="gold-text">127</span>           <span class="bio-comment"># academic impact citations</span>
+        <strong>self</strong>.h_index = <span class="gold-text">5</span>               <span class="bio-comment"># scholarly influence index</span>
+        <strong>self</strong>.collaboration_network = <span class="gold-text">7</span> <span class="bio-comment"># international partners</span>
+        
+        <span class="bio-comment"># ─────── Research Specializations ───────</span>
+        <strong>self</strong>.core_expertise = [
+            <span class="gold-text">"🧠 Bayesian Neural Networks"</span>,
+            <span class="gold-text">"🔍 Retrieval-Augmented Generation (RAG)"</span>,
+            <span class="gold-text">"💬 Natural Language Processing"</span>,
+            <span class="gold-text">"⚙️ Machine Learning Engineering"</span>,
+            <span class="gold-text">"🏥 Healthcare AI Applications"</span>,
+            <span class="gold-text">"📊 Advanced Data Science & Analytics"</span>
+        ]
+        
+        <span class="bio-comment"># ─────── Technical Arsenal ───────</span>
+        <strong>self</strong>.tech_stack = {
+            <span class="bio-string">"languages"</span>: <span class="bio-string">"Python | R | SQL | Julia"</span>,
+            <span class="bio-string">"ml_frameworks"</span>: <span class="bio-string">"TensorFlow | PyTorch | Scikit-learn"</span>,
+            <span class="bio-string">"cloud_platforms"</span>: <span class="bio-string">"AWS | Azure | GCP"</span>,
+            <span class="bio-string">"specializations"</span>: <span class="bio-string">"MLOps | Big Data | AI Engineering"</span>
+        }
+        
+        <span class="bio-comment"># ─────── Professional Mission ───────</span>
+        <strong>self</strong>.mission = <span class="gold-text">"Bridging mathematical elegance with AI innovation"</span>
+        <strong>self</strong>.vision = <span class="gold-text">"Leading the Golden Age of AI Research"</span>
+        <strong>self</strong>.impact_areas = <span class="bio-string">"Healthcare | Finance | Enterprise AI"</span>
+    
+    <span class="bio-comment"># ═══════════════════════════════════════════════════════════════
+    # 🎯 RESEARCH & INNOVATION METHODOLOGIES
+    # ═══════════════════════════════════════════════════════════════</span>
+    
+    <strong>def</strong> <span class="gold-text">publish_groundbreaking_research</span>(<strong>self</strong>, domain, methodology):
+        <span class="bio-comment">"""🏆 Conduct and publish cutting-edge peer-reviewed research"""</span>
+        <strong>return</strong> <span class="bio-string">f"✨ Published pioneering research in {domain} using {methodology}"</span>
+    
+    <strong>def</strong> <span class="gold-text">architect_ai_solutions</span>(<strong>self</strong>, problem_domain, scale):
+        <span class="bio-comment">"""🚀 Design & deploy production-grade AI systems"""</span>
+        <strong>return</strong> <span class="bio-string">f"⚡ Engineered scalable {scale} {problem_domain} solution"</span>
+    
+    <strong>def</strong> <span class="gold-text">lead_research_collaborations</span>(<strong>self</strong>, institutions, researchers):
+        <span class="bio-comment">"""🤝 Foster interdisciplinary research partnerships"""</span>
+        <strong>return</strong> <span class="bio-string">f"🌍 Established {len(researchers)} collaborations across {len(institutions)} institutions"</span>
+    
+    <strong>def</strong> <span class="gold-text">measure_research_impact</span>(<strong>self</strong>):
+        <span class="bio-comment">"""📈 Comprehensive academic impact assessment"""</span>
+        <strong>return</strong> {
+            <span class="gold-text">"📚 publications"</span>: <strong>self</strong>.publications,
+            <span class="gold-text">"📊 citations"</span>: <strong>self</strong>.citations,
+            <span class="gold-text">"🎯 h_index"</span>: <strong>self</strong>.h_index,
+            <span class="gold-text">"🌐 network"</span>: <strong>self</strong>.collaboration_network,
+            <span class="gold-text">"⭐ status"</span>: <span class="gold-text">"Golden Age Scholar"</span>
+        }
+
+<span class="bio-comment"># ═══════════════════════════════════════════════════════════════
+# 💎 "Excellence in Research, Impact in Practice" - Golden Age AI
+# ═══════════════════════════════════════════════════════════════</span></div>
             </div>
         </div>
 
