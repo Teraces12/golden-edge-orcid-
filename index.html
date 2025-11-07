@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden Edge ORCID Portfolio - Lebede Ngartera</title>
-    <meta name="description" content="Academic portfolio showcasing research publications, ORCID credentials, and AI expertise by Lebede Ngartera, Ph.D.">
-    <meta name="keywords" content="ORCID, Academic Research, AI, Machine Learning, Data Science, Ph.D., Publications">
-    <meta name="author" content="Lebede Ngartera">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
+    <title>Dr. Lebede Ngartera - AI Research Scientist & Ph.D. Scholar</title>
+    <meta name="description" content="Academic portfolio of Dr. Lebede Ngartera, Ph.D. in Applied Mathematics. Specializing in Bayesian Neural Networks, AI research, and machine learning applications.">
+    <meta name="keywords" content="ORCID, PhD, Applied Mathematics, AI Research, Machine Learning, Bayesian Neural Networks, Academic Portfolio">
+    <meta name="author" content="Dr. Lebede Ngartera">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,88 +17,718 @@
         }
 
         body {
-            font-family: 'Arial, sans-serif';
-            background: #ffffff;
-            color: #334155;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
             line-height: 1.6;
+            font-size: 16px;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 30px;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
         }
 
-        /* Header Styles */
-        .main-header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .header-decoration {
-            position: absolute;
-            font-size: 50px;
-            opacity: 0.3;
-            color: white;
-        }
-
-        .trophy-left {
-            top: 20px;
-            left: 40px;
-        }
-
-        .trophy-right {
-            top: 20px;
-            right: 40px;
-        }
-
-        .header-content {
+        /* Header Section */
+        .header {
             text-align: center;
-            position: relative;
-            z-index: 1;
+            padding: 60px 0 40px;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 40px;
         }
 
-        .header-title {
-            font-size: 32px;
-            font-weight: bold;
-            color: white;
-            margin-bottom: 10px;
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
         }
 
-        .header-subtitle {
-            font-size: 24px;
-            color: white;
-            margin-bottom: 15px;
+        .credentials {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-bottom: 12px;
+            font-weight: 500;
         }
 
-        .header-orcid {
-            font-size: 18px;
-            color: white;
-            margin-bottom: 10px;
+        .orcid-id {
+            font-size: 1rem;
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 20px;
         }
 
-        .header-links {
-            font-size: 14px;
-            color: white;
-            opacity: 0.9;
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
         }
 
-        /* Key Metrics Section */
-        .key-metrics {
-            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-            border-radius: 15px;
+        .contact-link {
+            color: #64748b;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .contact-link:hover {
+            color: #2563eb;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: #2563eb;
+            border-radius: 2px;
+        }
+
+        /* Research Profile */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .profile-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .profile-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 16px;
+        }
+
+        .profile-item {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .profile-label {
+            font-weight: 600;
+            color: #475569;
+            margin-right: 8px;
+        }
+
+        .profile-value {
+            color: #1e293b;
+        }
+
+        /* Metrics Section */
+        .metrics-section {
+            background: #f1f5f9;
+            border-radius: 8px;
             padding: 30px;
             margin-bottom: 30px;
-            opacity: 0.15;
         }
 
         .metrics-grid {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        /* Expertise Section */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .expertise-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            padding: 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #475569;
+            text-align: center;
+        }
+
+        /* Technical Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .skills-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .skills-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 12px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #e2e8f0;
+            color: #475569;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Publications */
+        .publications-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .publication-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .publication-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .publication-meta {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 6px;
+        }
+
+        .publication-authors {
+            font-size: 0.85rem;
+            color: #64748b;
+            font-style: italic;
+        }
+
+        .publication-meta a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .publication-meta a:hover {
+            text-decoration: underline;
+        }
+
+        /* Impact Section */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .impact-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .impact-card h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 12px;
+        }
+
+        .impact-item {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .impact-label {
+            font-weight: 600;
+            color: #475569;
+            margin-right: 6px;
+        }
+
+        .impact-value {
+            color: #1e293b;
+        }
+
+        /* Mission Section */
+        .mission-section {
+            background: #f1f5f9;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .mission-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 16px;
+        }
+
+        .mission-text {
+            font-size: 1rem;
+            color: #475569;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0 20px;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 60px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #64748b;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .footer-link:hover {
+            color: #2563eb;
+        }
+
+        .footer-contact {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .footer-copyright {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            .header {
+                padding: 40px 0 30px;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .credentials {
+                font-size: 1.1rem;
+            }
+
+            .profile-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                gap: 16px;
+            }
+
+            .footer-links {
+                gap: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">Dr. Lebede Ngartera</h1>
+            <div class="credentials">Ph.D. in Applied Mathematics • AI Research Scientist</div>
+            <div class="orcid-id">ORCID: 0000-0003-0561-1305</div>
+            <nav class="contact-links">
+                <a href="https://orcid.org/0000-0003-0561-1305" class="contact-link" target="_blank">🔗 ORCID Profile</a>
+                <a href="https://github.com/Teraces12" class="contact-link" target="_blank">🐙 GitHub</a>
+                <a href="https://linkedin.com/in/lebede-ngartera-82429343" class="contact-link" target="_blank">💼 LinkedIn</a>
+                <a href="https://scholar.google.com" class="contact-link" target="_blank">🎓 Google Scholar</a>
+            </nav>
+        </header>
+
+        <!-- Research Profile -->
+        <section class="section">
+            <h2 class="section-title">👨‍🔬 Research Profile</h2>
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <h3>Academic Credentials</h3>
+                    <div class="profile-item">
+                        <span class="profile-label">Degree:</span>
+                        <span class="profile-value">Ph.D. Applied Mathematics</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-label">Institution:</span>
+                        <span class="profile-value">Research Scholar</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-label">ORCID:</span>
+                        <span class="profile-value">0000-0003-0561-1305</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-label">Status:</span>
+                        <span class="profile-value">Active Researcher</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h3>Research Metrics</h3>
+                    <div class="profile-item">
+                        <span class="profile-label">Publications:</span>
+                        <span class="profile-value">9 Peer-Reviewed</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-label">Citations:</span>
+                        <span class="profile-value">127</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-label">h-index:</span>
+                        <span class="profile-value">5</span>
+                    </div>
+                    <div class="profile-item">
+                        <span class="profile-label">Experience:</span>
+                        <span class="profile-value">5+ Years</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Metrics -->
+        <section class="section">
+            <h2 class="section-title">📊 Research Impact</h2>
+            <div class="metrics-section">
+                <div class="metrics-grid">
+                    <div class="metric-item">
+                        <div class="metric-number">9</div>
+                        <div class="metric-label">Publications</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-number">127</div>
+                        <div class="metric-label">Citations</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-number">5</div>
+                        <div class="metric-label">h-index</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-number">7</div>
+                        <div class="metric-label">Collaborators</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Expertise -->
+        <section class="section">
+            <h2 class="section-title">🎯 Research Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-item">Applied Mathematics</div>
+                <div class="expertise-item">Bayesian Neural Networks</div>
+                <div class="expertise-item">Machine Learning</div>
+                <div class="expertise-item">Natural Language Processing</div>
+                <div class="expertise-item">Data Science & Analytics</div>
+                <div class="expertise-item">Healthcare AI</div>
+                <div class="expertise-item">Retrieval-Augmented Generation</div>
+                <div class="expertise-item">ML Engineering</div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2 class="section-title">🛠️ Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-card">
+                    <h4>Programming Languages</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Julia</span>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h4>Machine Learning Frameworks</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h4>Cloud Platforms</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h4>Specializations</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">MLOps</span>
+                        <span class="skill-tag">Big Data</span>
+                        <span class="skill-tag">AI Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section class="section">
+            <h2 class="section-title">📚 Selected Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="publication-title">Hybrid Naïve Bayes Models for Scam Detection: Comparative Insights from Email and Financial Fraud</div>
+                    <div class="publication-meta">IEEE Access • 2025 • DOI: <a href="https://doi.org/10.1109/ACCESS.2025.3569216" target="_blank">10.1109/ACCESS.2025.3569216</a></div>
+                    <div class="publication-authors">L. Ngartera, M.A. Issaka, S. Nadarajah</div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">Enhancing Autonomous Systems with Bayesian Neural Networks: A Probabilistic Framework for Navigation and Decision-Making</div>
+                    <div class="publication-meta">Frontiers in Built Environment • 2025</div>
+                    <div class="publication-authors">N. Lebede, S. Nadarajah</div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">A Comparative Study of Optimization Techniques on the Rosenbrock Function</div>
+                    <div class="publication-meta">Open Journal of Optimization • 2024 • DOI: <a href="https://doi.org/10.4236/ojop.2024.133004" target="_blank">10.4236/ojop.2024.133004</a></div>
+                    <div class="publication-authors">L. Ngartera, C. Diallo</div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="publication-title">Application of Bayesian Neural Networks in Healthcare: Three Case Studies</div>
+                    <div class="publication-meta">Machine Learning and Knowledge Extraction • 2024 • DOI: <a href="https://doi.org/10.3390/make6040127" target="_blank">10.3390/make6040127</a></div>
+                    <div class="publication-authors">L. Ngartera, M.A. Issaka, S. Nadarajah</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Impact -->
+        <section class="section">
+            <h2 class="section-title">🔬 Research Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <h4>Citation Metrics</h4>
+                    <div class="impact-item">
+                        <span class="impact-label">h-index:</span>
+                        <span class="impact-value">5</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-label">Total Citations:</span>
+                        <span class="impact-value">127</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-label">Field Impact:</span>
+                        <span class="impact-value">1.8</span>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <h4>Collaboration Network</h4>
+                    <div class="impact-item">
+                        <span class="impact-label">Collaborators:</span>
+                        <span class="impact-value">7</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-label">Institutions:</span>
+                        <span class="impact-value">4</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-label">International:</span>
+                        <span class="impact-value">3</span>
+                    </div>
+                </div>
+
+                <div class="impact-card">
+                    <h4>Academic Credentials</h4>
+                    <div class="impact-item">
+                        <span class="impact-label">Degree:</span>
+                        <span class="impact-value">Ph.D.</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-label">ORCID:</span>
+                        <span class="impact-value">Verified</span>
+                    </div>
+                    <div class="impact-item">
+                        <span class="impact-label">Period:</span>
+                        <span class="impact-value">2020-Present</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Mission -->
+        <section class="section">
+            <div class="mission-section">
+                <h2 class="mission-title">💎 Professional Mission</h2>
+                <p class="mission-text">
+                    Bridging mathematical rigor with AI innovation to advance scientific discovery and solve complex real-world challenges through principled research and interdisciplinary collaboration.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <nav class="footer-links">
+                <a href="https://orcid.org/0000-0003-0561-1305" class="footer-link" target="_blank">ORCID Profile</a>
+                <a href="https://github.com/Teraces12" class="footer-link" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/lebede-ngartera-82429343" class="footer-link" target="_blank">LinkedIn</a>
+                <a href="https://scholar.google.com" class="footer-link" target="_blank">Google Scholar</a>
+            </nav>
+            <div class="footer-contact">📧 lebede@terasystems.ai</div>
+            <div class="footer-copyright">© 2025 Dr. Lebede Ngartera • Golden Edge Research Portfolio</div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling and professional interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add subtle animations on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Animate sections on scroll
+            document.querySelectorAll('.section, .publication-item, .impact-card').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(10px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+
+            // Professional hover effects
+            document.querySelectorAll('.publication-item, .profile-card, .skills-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+
+            console.log('🎓 Academic Portfolio loaded successfully');
+            console.log('📊 Research metrics and publications displayed');
+            console.log('👨‍🔬 Dr. Lebede Ngartera - AI Research Scientist');
+        });
+    </script>
+</body>
+</html>
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
             max-width: 1200px;
